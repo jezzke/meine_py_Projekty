@@ -87,7 +87,6 @@ main_app.geometry("220x100+500+200")
 text = Label(main_app, text="zadej číslo od 1 do 100", font=("Liberation Sans", 12)).place(rely=0.25, relx=0.5, anchor="center")
 global textik
 textik = StringVar()
-global text_input
 textinput = Entry(main_app, textvariable=textik).place(rely=0.5, relx=0.5, anchor="center")
 btn = Button(main_app, text="přečíst myšlenky", command = lambda: je_to_cislo(textik)).place(relx=0.5, rely=0.75, anchor="center")
 
